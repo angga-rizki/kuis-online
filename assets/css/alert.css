@@ -1,0 +1,38 @@
+#alertContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    border-width: 2px;
+    text-align: center;
+    font-weight: bold;
+    animation-name: animatetop;
+    animation-duration: 1s;
+}
+.alert .close {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
